@@ -71,6 +71,9 @@ Arguments:
 
 ## Examples
 
+First create the MySQL database using the schema `eaimail.sql`.  Adjust user name and password as needed, and
+be sure to change them in the two python scripts, too.
+
 For small zones
 
 `./checkmx.py --par 1000 --sample 1 --max 1000 --res 8.8.8.8 --tee smallmx zone1.gz zone2.gz \
@@ -88,4 +91,9 @@ It's usually faster to use a public resolver like 8.8.8.8 or 9.9.9.9 than to ham
 To get useful results, test from a host that is not in the Spamhaus PBL or other e-mail blacklist.
 (Most residential broadband networks are added to the PBL by the ISPs.)
 
+Zone files for most ICANN contracted TLDs can be obtained by signing up at
+the Centralized Zone Data Service at https://czds.icann.org/en
 
+To get zone files for older domains including .com, .org, .info, .asia, and .biz,
+you have to send an application to the domain's registry to get an FTP
+password.
