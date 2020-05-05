@@ -76,12 +76,12 @@ be sure to change them in the two python scripts, too.
 
 For small zones
 
-`./checkmx.py --par 1000 --sample 1 --max 1000 --res 8.8.8.8 --tee smallmx zone1.gz zone2.gz \
+`./checkmx.py --par 1000 --sample 1 --max 1000 --res 8.8.8.8 --tee smallmx zone1.gz zone2.gz |
  ./testmx.py --par 200 --replace --dbmx`
 
 For larger zones
 
-`./checkmx.py --par 1000 --sample 100 --max 10000 --tee bigmx zone1.gz zone2.gz \
+`./checkmx.py --par 1000 --sample 100 --max 10000 --tee bigmx zone1.gz zone2.gz |
  ./testmx.py --par 200 --replace --dbmx`
 
 ## Observations
